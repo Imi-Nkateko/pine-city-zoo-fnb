@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Pine City Zoo</title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer ></script>
   </head>
   <body class="h-[100vh]">
@@ -13,7 +13,16 @@
 <div id="tabs-top" class="fixed top-[80px] left-0 z-[500] w-full h-[40px] bg-green-900">
 <a href="pages/animals.html" class="float-left block w-[33%] h-[35px] font-bold text-white text-center no-underline pt-[12px]">ANIMALS</a>
 <a href="#" class="float-left block w-[33%] h-[35px] font-bold text-white text-center no-underline pt-[12px]">MAP</a>
-<a href="#" class="float-left block w-[33%] h-[35px] font-bold text-white text-center no-underline pt-[12px]">PLACES</a>
+return {
+  "nvim-telescope/telescope.nvim",
+  keys = {
+    { "<leader>sf", "<cmd>Telescope find_files<cr>" },
+    { "<leader>sg", "<cmd>Telescope live_grep<cr>" },
+  },
+  tag = "0.1.8",
+  -- or                              , branch = '0.1.x',
+  dependencies = { "nvim-lua/plenary.nvim" },
+}<a href="#" class="float-left block w-[33%] h-[35px] font-bold text-white text-center no-underline pt-[12px]">PLACES</a>
 </div>
 <div id="main-home" class="mt-[120px]">
 <img src="images/map.png" class="w-full h-full overflow-none">
